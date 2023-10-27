@@ -1,76 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>CSS Flag Project</title>
-  <style>
-    /* Write your CSS Code here */
-    .flag{
-       background-color: red;
-       width: 900px;
-       height: 600px;
-       position: relative;
-       margin-top: 150px;
-      
-    }
-    .flag > div{
-      background-color: navy ;
-      width: 100%;
-      height: 300px;
-      position: absolute;
-      top: 150px;
-
-    }
-
-    .flag > div > div{
-      background-color: white;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      position: absolute;
-      top: 50px;
-      left: 325px;
-
-    }
-
-    p{
-      font-size: 5rem;
-      color: white;
-      text-align: center;
-      padding: 0%;
-      margin: 0%;
-    }
-
-    .flag > div  div p{
-      color: black;
-    }
-
-
-
-
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+ <style>
+  *{
+    box-sizing: border-box;
+    margin: 0;
+  }
 
-<!-- 
-  IMPORTANT! Do not change any HTML
-Don't add any classes/ids/elements 
-Use what you know about combining selectors 
-and CSS specificity instead.
-Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
-Hint 2: You can use CSS inspection to get the colors from
-https://appbrewery.github.io/flag-of-laos/
--->
+  .flag{
+    width: 600px;
+    height: 450px;
+  }
 
+  .saffron{
+    background-color: #ff6600;
+    position: relative;
+    width: 600px;
+    height: 150px;
+  }
+
+  .white{
+    background-color: white;
+    position: relative;
+    width: 600px;
+    height: 150px;
+  }
+
+  .green{
+    background-color: #046434;
+    position: relative;
+    width: 600px;
+    height: 150px;
+  }
+  .flag{
+    text-align: center;
+    font-size: 5rem;
+  }
+ </style>
 <body>
   <div class="flag">
-    <p>The Flag</p>
-    <div>
-      <div>
-        <p>of Laos</p>
+    <div class="saffron"> Flag of</div>
+    <div class="white">
+      <div class="wheel">
+        <div class="image"><img src="./download.jpeg" alt="flag" height="150px" ></div>
       </div>
     </div>
+    <div class="green">Bharat</div>
   </div>
+  
 </body>
-
 </html>
